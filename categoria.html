@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoria</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/categoria.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo-link">
+                <div class="navbar-logo">
+                    <img id="logo" src="assets/images/pokeAPI.png" alt="Logo da Loja" />
+                    <h1>Loja do Edmar</h1>
+                </div>
+            </a>
+
+            <ul id="navbar-menu" class="navbar-menu">
+                <li class="dropdown">
+                    <a href="#" class="navbar-item">Categorias ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="categoria.html?categoria=Celulares e Smartphones" class="navbar-item">Celulares e
+                                Smartphones</a></li>
+                        <li><a href="categoria.html?categoria=TV" class="navbar-item">TV</a></li>
+                        <li><a href="categoria.html?categoria=Eletrodomésticos" class="navbar-item">Eletrodomésticos</a>
+                        </li>
+                        <li><a href="categoria.html?categoria=Móveis" class="navbar-item">Móveis</a></li>
+                        <li><a href="categoria.html?categoria=Informática" class="navbar-item">Informática</a></li>
+                        <li><a href="categoria.html?categoria=Ar e Ventilação" class="navbar-item">Ar e Ventilação</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <form id="form-pesquisa" class="navbar-search">
+                <input id="barra-de-pesquisa" type="text" placeholder="Pesquisar produtos" />
+                <button type="submit">Buscar</button>
+            </form>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 id="titulo-categoria">Categoria</h2>
+            <div id="produtos"></div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="js/produtos.js"></script>
+    <script src="js/categoria.js"></script>
+</body>
+
+</html>
