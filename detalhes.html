@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categoria</title>
+    <title>Detalhes</title>
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/categoria.css">
+    <link rel="stylesheet" href="css/detalhes.css">
+
+
 </head>
-
-
 
 <body>
     <header>
@@ -42,23 +42,39 @@
                 <button type="submit" id="botao-buscar">Buscar</button>
             </form>
             <a href="carrinho.html" class="navbar-cart">
-                <img id="icone-carrinho" src="https://cdn-icons-png.freepik.com/512/5465/5465865.png" alt="Carrinho de Compras">
+                <img id="icone-carrinho" src="https://cdn-icons-png.freepik.com/512/5465/5465865.png"
+                    alt="Carrinho de Compras">
             </a>
         </nav>
     </header>
     <main>
-        <section>
-            <h2 id="titulo-categoria">Categoria</h2>
-            <div id="produtos"></div>
+        <section class="details-section" id="detalhes-produto">
+            <h2 id="titulo-produto"></h2>
+
+            <div class="details-detalhes-produto">
+                <div class="details-lado-imagem">
+                    <img id="imagem-produto" src="" alt="Imagem do produto">
+                </div>
+
+                <div class="details-info-produtos">
+                    <p><strong>Categoria:</strong> <span id="categoria-produto"></span></p>
+                    <p><strong>Preço:</strong> <span id="preco-produto"></span></p>
+                    <p><strong>Descrição:</strong> <span id="descricao-produto"></span></p>
+
+                    <button class="botao-carrinho" aria-label="Adicionar produto ao carrinho">Adicionar ao Carrinho</button>
+                </div>
+            </div>
         </section>
     </main>
+
 
     <footer>
 
     </footer>
 
     <script src="js/produtos.js"></script>
-    <script src="js/categoria.js"></script>
+    <script src="js/detalhes.js"></script>
+
 </body>
 
 </html>

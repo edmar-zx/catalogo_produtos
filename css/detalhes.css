@@ -1,0 +1,42 @@
+.details-section{
+    width: 100%;
+}
+
+#titulo-produto{
+    color: rgb(99, 148, 148);
+}
+.details-detalhes-produto {
+    width: 80%;
+    border: 1px solid;
+    display: flex;
+}
+
+
+#details-titulo-produto {
+
+}
+
+
+
+.details-lado-imagem{
+    width: 40%;
+    border: 1px solid rgb(49, 59, 70);
+    padding: 3rem;
+}
+
+#imagem-produto{
+    width: 100%;
+}
+
+
+.details-info-produtos{
+    width: 60%;
+}
+
+#details-imagem-produto {
+
+}
+
+.details-detalhes-produto p {
+
+}

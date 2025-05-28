@@ -1,8 +1,0 @@
-.logo-link {
-  text-decoration: none; /* Remove sublinhado */
-  color: inherit;         /* Mantém a cor original do texto */
-}
-
-.logo-link h1 {
-  color: inherit;         /* Garante que o <h1> não herde cor azul */
-}

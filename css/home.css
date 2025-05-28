@@ -47,6 +47,15 @@ main{
   gap: 30px;
 }
 
+.logo-link {
+  text-decoration: none; /* Remove sublinhado */
+  color: inherit;         /* Mantém a cor original do texto */
+}
+
+.logo-link h1 {
+  color: inherit;         /* Garante que o <h1> não herde cor azul */
+}
+
 .navbar-search {
   display: flex;
   align-items: center;
@@ -64,7 +73,7 @@ main{
 
 }
 
-.navbar-search button {
+#botao-buscar {
   padding: 8px 25px;
   background-color: #007bff;
   color: white;
@@ -73,13 +82,57 @@ main{
   cursor: pointer;
 }
 
-.navbar-search button:hover {
+#botao-buscar:hover {
   background-color: #0056b3;
 }
+
+.sugestoes-lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: white;
+  border: 1px solid #ccc;
+  position: absolute;
+  z-index: 1000;
+  width: 250px;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.sugestoes-lista li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.sugestoes-lista li:hover {
+  background-color: #f0f0f0;
+}
+
+
+
 #logo {
   width: 60px;
   height: auto;
 }
+
+#icone-carrinho{
+  width: 32px;
+  height: 32px;
+}
+
+.navbar-cart {
+  transition: transform 0.2s ease;
+}
+
+.navbar-cart:hover {
+  transform: scale(1.4);
+ 
+}
+
+.navbar-item.dropdown-toggle {
+  cursor: pointer;  
+}
+
 .dropdown {
   position: relative;
 }
@@ -186,7 +239,7 @@ section h2 {
 }
 
 /* Botão */
-.produto a {
+.botao-carrinho {
   display: inline-block;
   text-decoration: none;
   color: #fff;
@@ -197,7 +250,7 @@ section h2 {
   transition: background 0.3s ease;
 }
 
-.produto a:hover {
+.botao-carrinho a:hover {
   background-color: #218838;
 }
 
