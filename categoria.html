@@ -6,56 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categoria</title>
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/categoria.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
-
-
 <body>
     <header>
         <nav class="navbar">
-            <a href="index.html" class="logo-link">
-                <div class="navbar-logo">
-                    <img id="logo" src="assets/images/tatu.png" alt="Logo da Loja" />
-                    <h1>Loja do Edmar</h1>
-                </div>
-            </a>
-            <ul id="navbar-menu" class="navbar-menu">
-                <li class="dropdown">
-                    <span class="navbar-item dropdown-toggle">Categorias ▾</span>
-                    <ul class="dropdown-menu">
-                        <li><a href="categoria.html?categoria=Celulares e Smartphones" class="navbar-item">Celulares e
-                                Smartphones</a></li>
-                        <li><a href="categoria.html?categoria=TV" class="navbar-item">TV</a></li>
-                        <li><a href="categoria.html?categoria=Eletrodomésticos" class="navbar-item">Eletrodomésticos</a>
-                        </li>
-                        <li><a href="categoria.html?categoria=Móveis" class="navbar-item">Móveis</a></li>
-                        <li><a href="categoria.html?categoria=Informática" class="navbar-item">Informática</a></li>
-                        <li><a href="categoria.html?categoria=Ar e Ventilação" class="navbar-item">Ar e Ventilação</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+            <div class="navbar-left">
+                <a href="index.html" class="logo-link">
+                    <div class="navbar-logo">
+                       <div class="gradient-border">
+          <div class="inner-content">
+            <img
+              src="https://thumbs.dreamstime.com/b/%C3%ADcone-da-loja-online-isolado-em-fundo-escuro-logotipo-vetorial-simples-235014153.jpg"
+              alt="Descrição">
+          </div>
+        </div>
+                        <h1 id="nome-loja">OnlineShop</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="navbar-center">
+                <ul id="navbar-menu" class="navbar-menu">
+                    <li class="dropdown">
+                        <span class="navbar-item dropdown-toggle" style="cursor: pointer;">
+                            <i class="fas fa-bars" style="margin-right: 6px;"></i>
+                            Departamentos</span>
+                        <ul class="dropdown-menu">
+                            <li><a href="categoria.html?categoria=Celulares e Smartphones" class="navbar-item">Celulares
+                                    e Smartphones</a></li>
+                            <li><a href="categoria.html?categoria=TV" class="navbar-item">TV</a></li>
+                            <li><a href="categoria.html?categoria=Eletrodomésticos"
+                                    class="navbar-item">Eletrodomésticos</a></li>
+                            <li><a href="categoria.html?categoria=Móveis" class="navbar-item">Móveis</a></li>
+                            <li><a href="categoria.html?categoria=Informática" class="navbar-item">Informática</a></li>
+                            <li><a href="categoria.html?categoria=Ar e Ventilação" class="navbar-item">Ar e
+                                    Ventilação</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
 
-            <form id="form-pesquisa" class="navbar-search">
-                <input id="barra-de-pesquisa" type="text" placeholder="Pesquisar produtos" />
-                <button type="submit" id="botao-buscar">Buscar</button>
-            </form>
-            <a href="carrinho.html" class="navbar-cart">
-                <img id="icone-carrinho" src="https://cdn-icons-png.freepik.com/512/5465/5465865.png" alt="Carrinho de Compras">
-            </a>
+            <div class="navbar-right">
+                <a href="carrinho.html" class="navbar-cart" title="Ir para o carrinho">
+                    <i id="icone-carrinho" class="fas fa-shopping-cart"></i>
+                    <span id="contador-carrinho" class="contador-carrinho">0</span>
+                </a>
+            </div>
         </nav>
     </header>
     <main>
         <section>
-            <h2 id="titulo-categoria">Categoria</h2>
+            <h2 id="titulo-pagina">Categoria</h2>
             <div id="produtos"></div>
         </section>
     </main>
-
-    <footer>
-
-    </footer>
+   <!--   <footer class="footer">
+        <div class="nome-loja-footer">
+            <p>OnlineShop</p>
+        </div>
+        <div class="gradient-border">
+            <div class="inner-content">
+                <img src="https://thumbs.dreamstime.com/b/%C3%ADcone-da-loja-online-isolado-em-fundo-escuro-logotipo-vetorial-simples-235014153.jpg"
+                    alt="Imagem com borda gradiente">
+            </div>
+        </div>
+        <div class="redes-sociais">
+            <a href="https://instagram.com" target="_blank">
+                <span>Instagram</span>
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank">
+                <span>Facebook</span>
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <span>Twitter</span>
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </footer> -->
 
     <script src="js/produtos.js"></script>
     <script src="js/categoria.js"></script>

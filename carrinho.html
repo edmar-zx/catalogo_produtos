@@ -7,6 +7,7 @@
     <title>Carrinho</title>
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/carrinho.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -14,51 +15,35 @@
         <nav class="navbar">
             <a href="index.html" class="logo-link">
                 <div class="navbar-logo">
-                    <img id="logo" src="assets/images/tatu.png" alt="Logo da Loja" />
-                    <h1>Loja do Edmar</h1>
+                    <div class="gradient-border">
+                        <div class="inner-content">
+                            <img src="https://thumbs.dreamstime.com/b/%C3%ADcone-da-loja-online-isolado-em-fundo-escuro-logotipo-vetorial-simples-235014153.jpg"
+                                alt="Descrição">
+                        </div>
+                    </div>
+                    <h1 id="nome-loja">OnlineShop</h1>
                 </div>
             </a>
-            <ul id="navbar-menu" class="navbar-menu">
-                <li class="dropdown">
-                    <span class="navbar-item dropdown-toggle">Categorias ▾</span>
-                    <ul class="dropdown-menu">
-                        <li><a href="categoria.html?categoria=Celulares e Smartphones" class="navbar-item">Celulares e
-                                Smartphones</a></li>
-                        <li><a href="categoria.html?categoria=TV" class="navbar-item">TV</a></li>
-                        <li><a href="categoria.html?categoria=Eletrodomésticos" class="navbar-item">Eletrodomésticos</a>
-                        </li>
-                        <li><a href="categoria.html?categoria=Móveis" class="navbar-item">Móveis</a></li>
-                        <li><a href="categoria.html?categoria=Informática" class="navbar-item">Informática</a></li>
-                        <li><a href="categoria.html?categoria=Ar e Ventilação" class="navbar-item">Ar e Ventilação</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-
-            <form id="form-pesquisa" class="navbar-search">
-                <input id="barra-de-pesquisa" type="text" placeholder="Pesquisar produtos" />
-                <button type="submit" id="botao-buscar">Buscar</button>
-            </form>
-            <a href="carrinho.html" class="navbar-cart">
-                <img id="icone-carrinho" src="https://cdn-icons-png.freepik.com/512/5465/5465865.png" alt="Carrinho de Compras">
+            <a href="carrinho.html" class="navbar-cart" title="Ir para o carrinho">
+                <i id="icone-carrinho" class="fas fa-shopping-cart"></i>
+                <span id="contador-carrinho" class="contador-carrinho">0</span>
             </a>
         </nav>
     </header>
-
     <main>
-        <section>
+        <section id="container-carrinho">
             <h2>Produtos no Carrinho</h2>
-            <div id="produtos"></div>
-            <button id="limpar-carrinho">Limpar Carrinho</button>
+            <div id="produtos-carrinho"></div>
+            <button id="limpar-carrinho">Remover todos os itens</button>
         </section>
     </main>
 
     <footer>
-        <!-- opcional -->
+        <!-- tava dando ruim e nao consegui arrumar -->
     </footer>
 
     <script src="js/produtos.js"></script>
-    <script src="js/carrinho.js"></script> <!-- Vamos criar esse arquivo -->
+    <script src="js/carrinho.js"></script>
 </body>
 
 </html>

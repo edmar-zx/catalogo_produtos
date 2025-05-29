@@ -1,4 +1,7 @@
+
 function carregarDetalhesProduto() {
+  const container = document.getElementById('detalhes-produto');
+
   const params = new URLSearchParams(window.location.search);
   const idProduto = parseInt(params.get('id'));
 
@@ -9,7 +12,6 @@ function carregarDetalhesProduto() {
   }
 
   const produto = produtos.find(p => p.id === idProduto);
-  const container = document.getElementById('detalhes-produto');
 
   if (!produto) {
     container.innerHTML = '<p>Produto não encontrado.</p>';
@@ -18,7 +20,7 @@ function carregarDetalhesProduto() {
   }
 
   document.title = produto.nome;
-  document.getElementById('titulo-produto').textContent = produto.nome;
+  document.getElementById('titulo-produto-detalhes').textContent = produto.nome;
 
   const img = document.getElementById('imagem-produto');
   img.src = produto.imagem;
@@ -30,7 +32,40 @@ function carregarDetalhesProduto() {
     currency: 'BRL'
   });
 
-  document.getElementById('descricao-produto').textContent = produto.descricao || 'Sem descrição.';
-}
+  document.getElementById('marca-produto').textContent = produto.marca || 'Sem marca.';
 
-document.addEventListener('DOMContentLoaded', carregarDetalhesProduto);
+
+  const descricaoEl = document.getElementById('descricao-produto');
+  descricaoEl.textContent = produto.descricao || 'Descrição não disponível.';
+
+  const btnAdicionarCarrinho = document.getElementById('btn-adicionar-carrinho');
+
+  // Verificar se já está no carrinho
+  let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+  const jaExiste = carrinho.find(p => p.id === produto.id);
+
+
+  // Faz o comportamento de adicionar produto ao carrinho que na home, mas nao adiciona um elemento na div pelo js, pois essa pagina a estrutura e feita direta no html
+  const textoAdicionado = document.createElement('span');
+  textoAdicionado.textContent = 'Adicionado ao carrinho';
+  textoAdicionado.classList.add('texto-adicionado');
+
+  if (jaExiste) {
+    btnAdicionarCarrinho.replaceWith(textoAdicionado);
+  } else {
+    // Se ainda não estiver no carrinho, adicionar comportamento do botão
+    btnAdicionarCarrinho.addEventListener('click', function (event) {
+      event.preventDefault();
+
+      carrinho.push(produto);
+      localStorage.setItem('carrinho', JSON.stringify(carrinho));
+      atualizarContadorCarrinho();
+      btnAdicionarCarrinho.replaceWith(textoAdicionado);
+    });
+  }
+}
+document.addEventListener('DOMContentLoaded', () => {
+  carregarDetalhesProduto();
+  atualizarContadorCarrinho();
+});
+
