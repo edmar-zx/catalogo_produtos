@@ -33,6 +33,7 @@ main {
 #nome-loja {
   font-size: 40px;
   font-weight: bold;
+  
   background: linear-gradient(90deg, #2d67a1 0%, #7b3fbf 70%, #9a70c7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -277,10 +278,11 @@ main {
 
 .produto img {
   padding: 20px;
-  width: 100%;
+  max-width: 100%;
   height: 240px;
   display: block;
   object-fit: cover;
+  margin: 0 auto;
 }
 
 .info-produto {

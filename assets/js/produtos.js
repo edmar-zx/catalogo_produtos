@@ -210,8 +210,9 @@ function atualizarContadorCarrinho() {
 function exibirProdutos(lista) {
   const container = document.getElementById('produtos');
   if (!container) return;
-
+  
   container.innerHTML = '';
+  console.log(container)
 
   const termo = document.getElementById('barra-de-pesquisa')?.value.trim();
   const regex = termo ? new RegExp(`(${termo})`, 'gi') : null;
