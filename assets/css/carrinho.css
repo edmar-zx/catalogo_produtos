@@ -130,6 +130,7 @@
   border-radius: 8px;
   padding: 8px 16px;
   color: #c0392b;
+  cursor: pointer;
   font-weight: 700;
 }
 

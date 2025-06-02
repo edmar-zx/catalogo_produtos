@@ -48,7 +48,7 @@ const produtos = [
     categoria: 'TV',
     cor: 'Preto',
     marca: 'HQ Screen',
-    descricao: 'Smartphone Motorola Edge 60 5G - 512GB 24GB (12GB RAM+12GB Ram Boost) Tela Quad-Curve moto AI 50MP Sony Camera ultrarresistencia militar IP68 + IP69 A câmera mais avançada da categoria Sony LYTIA ™ 50 MP + 50 MP + 50X A tela de 1.5K Quad-Curve mais resistente e sofisticada do mundo, mais brilhante e vibrante. Com Moto AI: capture momentos e simplifique a sua rotina.'
+    descricao: 'A Smart TV HQ 50 4K oferece imagens com resolução Ultra HD e cores de tirar o fôlego. A Smart HQ possui as principais tecnologias da atualidade como Wi-Fi integrado, entrada HDMI e conexões USB. Conta com recursos modernos, que proporcionam conforto e bons momentos de entretenimento para quem está assistindo. Ela é a escolha perfeita para transformar sua casa em um verdadeira sala de cinema. Tudo que você sempre quis em uma TV. Os aplicativos mais desejados já vão instalados, como: Netflix, Youtube, PrimeVideo, Spotify e você também pode baixar diversos outros pela loja. 1 ano de garantia pelo fabricante'
   },
   {
     id: 6,
@@ -73,7 +73,7 @@ const produtos = [
   {
     id: 8,
     nome: 'Fogão Consul 4 Bocas CFO4NAR com Mesa de Inox, Acendimento Automático e Design Frente Única Bivolt - Inox',
-    preco: 9000.00,
+    preco: 1165.42,
     imagem: 'https://imgs.casasbahia.com.br/6460227/1g.jpg?imwidth=500',
     categoria: 'Eletrodomésticos',
     cor: 'Cinza',
@@ -189,7 +189,59 @@ const produtos = [
     cor: 'Preto',
     marca: 'Office Pro',
     descricao: 'Cadeira giratória com apoio lombar e assento acolchoado, ajuste de altura e base com rodízios.'
-  }
+  },
+{
+  id: 20,
+  nome: 'Smartphone Xiaomi Redmi Note 13 5G 256GB Azul',
+  preco: 1899.00,
+  imagem: 'https://a-static.mlcdn.com.br/1500x1500/smartphone-xiaomi-redmi-note-13-5g-256gb-8gb-ram-de-6-67-108-8-2mp-16mp/leperfumimportados/80106620e65811ee9da94201ac185040/f05c985d6411c8f0d78bf21b618bafab.jpeg',
+  categoria: 'Celulares e Smartphones',
+  cor: 'Azul',
+  marca: 'Xiaomi',
+  descricao: 'Equipado com processador MediaTek Dimensity 6100+, o Redmi Note 13 5G conta com 256GB de armazenamento, 8GB RAM, tela AMOLED de 6.6\'\' FHD+, bateria de 5000mAh e câmera de 50MP com IA.'
+},
+{
+  id: 21,
+  nome: 'Smart TV LG 55" OLED evo C3 4K AI ThinQ, Dolby Vision e WebOS',
+  preco: 4699.90,
+  imagem: 'https://www.lg.com/content/dam/channel/wcms/br/images/tv/oled83c3psa_awz_essp_br_c/gallery/DZ05.jpg',
+  categoria: 'TV',
+  cor: 'Preto',
+  marca: 'LG',
+  descricao: 'A LG OLED evo C3 com 55 polegadas entrega contraste infinito, Dolby Vision, AI Picture Pro e sistema WebOS com controle por voz. Ideal para filmes, esportes e jogos.'
+},
+{
+  id: 22,
+  nome: 'Notebook Lenovo Ideapad 3i Intel Core i5 8GB 512GB SSD',
+  preco: 2999.00,
+  imagem: 'https://imgs.casasbahia.com.br/1001337301/1g.jpg',
+  categoria: 'Informática',
+  cor: 'Cinza',
+  marca: 'Lenovo',
+  descricao: 'Notebook com processador Intel Core i5 de 11ª geração, 8GB de RAM, 512GB SSD, tela de 15.6” Full HD, ideal para estudos, trabalho e uso diário. Sistema Windows 11 Home.'
+},
+{
+  id: 23,
+  nome: 'Aspirador de Pó Vertical Electrolux PowerSpeed 1800W',
+  preco: 429.90,
+  imagem: 'https://imgs.casasbahia.com.br/1570637357/1xg.jpg',
+  categoria: 'Eletrodomésticos',
+  cor: 'Vermelho',
+  marca: 'Electrolux',
+  descricao: 'Aspirador vertical com 1800W de potência, coletor lavável, filtro HEPA, ideal para limpeza rápida e eficiente de todos os ambientes da casa.'
+},
+{
+  id: 24,
+  nome: 'Estante Livreira 5 Prateleiras Madeira Rústica',
+  preco: 599.00,
+  imagem: 'https://m.media-amazon.com/images/I/61mCitnT1ZL._AC_UF894,1000_QL80_.jpg',
+  categoria: 'Móveis',
+  cor: 'Madeira Rústica',
+  marca: 'Home Decor',
+  descricao: 'Estante com 5 prateleiras espaçosas, estrutura em MDF e acabamento em madeira rústica. Ideal para organizar livros, objetos de decoração e itens do dia a dia.'
+}
+
+
 ];
 
 // Funcao para atualizar o contador que fica ao lado do carrinho, funciona em todos os outros .js

@@ -52,6 +52,7 @@ main {
 .details-lado-imagem img {
   width: 100%;
   height: auto;
+  max-height: 368px;
   border-radius: 8px;
   object-fit: contain;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
